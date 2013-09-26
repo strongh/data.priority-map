@@ -145,7 +145,8 @@ to Clojure's assortment of built-in maps (hash-map and sorted-map).
 "}
     clojure.data.priority-map
   (:use clojure.test)
-  (:import clojure.lang.MapEntry java.util.Map clojure.lang.PersistentTreeMap))
+  (:import clojure.lang.MapEntry java.util.Map clojure.lang.PersistentTreeMap)
+  (:gen-class))
 
 ; Note that the plan is to eventually support subseq, but this will require
 ; some changes to core:
